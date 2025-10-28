@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Junwen Chen — Personal Site</title>
+  <meta name="description" content="Personal homepage & resume" />
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+  <meta property="og:title" content="Your Name — Personal Site">
+  <meta property="og:description" content="A clean, responsive GitHub Pages resume">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-preview.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "Your Role / Research Area",
+    "email": "mailto:you@example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "City, Country"
+    },
+    "url": "https://<your-github-username>.github.io/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="assets/img/avatar.svg" alt="Avatar" class="brand-avatar" />
+        <span class="brand-text">
+          <strong>Junwen Chen</strong>
+          <small>Ph.D. at The University of Electro-Communications</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Internships</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+          <li><button id="themeBtn" class="btn btn-ghost" aria-label="Toggle theme">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container grid-2">
+        <div>
+          <h1>Junwen Chen</h1>
+          <img src="homepage.jpg" alt="Junwen Chen image" style="width: 50%; height: auto; vertical-align: middle; margin-left: 8px;" />
+          <p class="lead">Ph.D. at The University of Electro-Communications · Tokyo, Japan</p>
+          <p class="muted">Hello, I am Junwen Chen, from Sichuan, China. I am currently pursuing my Ph.D. at The University of Electro-Communications and belong to the Yanai Lab. My research mainly focuses on Human-Object Interaction Detection and AIGC.</p>
+          <div class="btn-row">
+            <a class="btn" href="mailto:ohhthxplz@gmail.com">Contact Me</a>
+            <!-- <a class="btn btn-outline" href="assets/CV.pdf">Download PDF Resume</a> -->
+          </div>
+        </div>
+        <div class="hero-card">
+          <ul class="meta">
+            <li><span>Email</span><a href="mailto:ohhthxplz@gmail.com">ohhthxplz@gmail.com</a></li>
+            <li><span>Location</span>Tokyo, Japan</li>
+            <li><span>GitHub Personal</span><a href="https://github.com/CUQS" target="_blank" rel="noreferrer">https://github.com/CUQS</a></li>
+            <li><span>GitHub Research</span><a href="https://github.com/cjw2021" target="_blank" rel="noreferrer">https://github.com/cjw2021</a></li>
+            <li><span>Google Scholar</span><a href="https://scholar.google.jp/citations?user=LiCkH5MAAAAJ&hl=ja&oi=ao" target="_blank" rel="noreferrer">Scholar profile link</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I mainly conduct research on <strong class="keyword">deep learning</strong> in the field of <strong class="keyword">computer vision</strong>, focusing on improving the <strong class="keyword">accuracy</strong> and <strong class="keyword">generalization</strong> of <strong class="keyword">Human-Object Interaction (HOI) detection</strong> methods from my master's to doctoral studies. Recently, I have been exploring the integration of Multimodal Large Language Models (<strong class="keyword">MLLMs</strong>) and AI-Generated Content (<strong class="keyword">AIGC</strong>) into my research topics.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Research Interests</h3>
+            <ul>
+              <li>Machine Learning, Deep Learning</li>
+              <li>Computer Vision: Object Detection, Image Segmentation, Visual Question Answering, Video Action Recognition</li>
+              <li>AIGC: Text-to-Image Generation, Multi-layer Image Generation, Image Editing</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Looking For</h3>
+            <p>Winter 2026 research internship / Full-time R&D engineer / Full-time research scientist</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-header">
+                <h3>The University of Electro-Communications · Ph.D.</h3>
+                <span class="time">2023/10 — Present</span>
+              </div>
+              <p>Major: Informatics</p>
+              <p>Research Theme: Improving the Efficiency and Generality of Human-Object Interaction Detection Methods</p>
+              <ul class="tags">
+                <li>Deep Learning</li><li>Computer Vision</li><li>Human-Object Interaction Detection</li><li>Transformer</li><li>VLM</li><li>MLLM</li>
+              </ul>
+              <p>Major Achievement:</p>
+              1. Chen, Junwen, Peilin Xiong, and Keiji Yanai. "<strong>HOI-R1: Exploring the Potential of Multimodal Large Language Models for Human-Object Interaction Detection</strong>." arXiv preprint arXiv:2510.05609 (2025). <a href="https://arxiv.org/abs/2510.05609" target="_blank" rel="noreferrer">[PDF]</a> <a class="chip" href="#card-hoi-r1">Research Card</a><br>
+              2. Chen, Junwen, Yingcheng Wang, and Keiji Yanai. "<strong>Focusing on what to Decode and what to Train: SOV Decoding with Specific Target Guided DeNoising and Vision Language Advisor</strong>." 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). IEEE, 2025. <a href="https://doi.org/10.1109/WACV61041.2025.00912" target="_blank" rel="noreferrer">[PDF]</a> <a href="https://github.com/cjw2021/SOV-STG-VLA" target="_blank" rel="noreferrer">[Code]</a> <a class="chip" href="#card-sov-stg-vla">Research Card</a><br>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-header">
+                <h3>The University of Electro-Communications · M.S.</h3>
+                <span class="time">2021/10 — 2023/09</span>
+              </div>
+              <p>Major: Informatics</p>
+              <p>Degree: Master of Informatics</p>
+              <p>Research Theme: Improvement of Human-Object Interaction Detection Methods and Their Application to Dietary Analysis</p>
+              <ul class="tags">
+                <li>Deep Learning</li><li>Computer Vision</li><li>Human-Object Interaction Detection</li><li>Transformer</li>
+              </ul>
+              <p>Major Achievement:</p>
+              1. Chen, Junwen, and Keiji Yanai. "<strong>QAHOI: Query-based anchors for human-object interaction detection</strong>." 2023 18th International Conference on Machine Vision and Applications (MVA). IEEE, 2023. <a href="https://ieeexplore.ieee.org/document/10215534" target="_blank" rel="noreferrer">[PDF]</a> <a href="https://github.com/cjw2021/QAHOI" target="_blank" rel="noreferrer">[Code]</a> <a class="chip" href="#card-qahoi">Research Card</a><br>
+              2. Chen, Junwen, and Keiji Yanai. "<strong>Parallel Queries for Human-Object Interaction Detection</strong>." Proceedings of the 4th ACM International Conference on Multimedia in Asia. 2022. <a href="https://dl.acm.org/doi/10.1145/3551626.3564944" target="_blank" rel="noreferrer">[PDF]</a> <a class="chip" href="#card-pqnet">Research Card</a><br>
+              3. Wang, Yingcheng, Junwen Chen, and Keiji Yanai. "<strong>HowToEat: Exploring Human Object Interaction and Eating Action in Eating Scenarios</strong>." Proceedings of the 8th International Workshop on Multimedia Assisted Dietary Management. 2023. <a href="https://dl.acm.org/doi/10.1145/3607828.3617790" target="_blank" rel="noreferrer">[PDF]</a> <a class="chip" href="#card-howtoeat">Research Card</a>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-header">
+                <h3>North China University of Technology · B.S.</h3>
+                <span class="time">2016/09 — 2020/07</span>
+              </div>
+              <p>Major: Automation</p>
+              <p>Degree: Bachelor of Electrical and Control Engineering</p>
+              <p>Research Theme: Intelligent Driving Scene Segmentation with Deep Detection Model and Graph Convolutional Network</p>
+              <ul class="tags">
+                <li>Deep Learning</li><li>Computer Vision</li><li>Instance Segmentation</li><li>Graph Neural Networks</li>
+              </ul>
+              <p>Major Achievement:</p>
+              1. Chen, J., Lu, Y., Chen, Y., Zhao, D., & Pang, Z. (2020, November). Contourrend: a segmentation method for improving contours by rendering. In International Symposium on Neural Networks (pp. 251-260). Cham: Springer International Publishing. <a href="https://dl.acm.org/doi/10.1007/978-3-030-64221-1_22" target="_blank" rel="noreferrer">[PDF]</a> <a href="https://github.com/CUQS/ContourRend" target="_blank" rel="noreferrer">[Code]</a> <a class="chip" href="#card-contourrend">Research Card</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Internships</h2>
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Microsoft Research Asia · Full-time Research Intern</h3>
+              <span class="time">2024.10 — 2025.04 · Beijing</span>
+            </header>
+            <ul class="bullets">
+              <li>Research on Layout-based, Multi-layer Image Generation and Knowledge Graph-based Image Generation Benchmark.</li>
+              <p>Major Achievement:</p>
+              1. Chen, J., Jiang, H., Wang, Y., Wu, K., Li, J., Zhang, C., ... & Yuan, Y. (2025). PrismLayers: Open Data for High-Quality Multi-Layer Transparent Image Generative Models. arXiv preprint arXiv:2505.22523. <a href="https://arxiv.org/abs/2505.22523" target="_blank" rel="noreferrer">[PDF]</a> <a href="https://huggingface.co/datasets/artplus/PrismLayersPro" target="_blank" rel="noreferrer">[Datasets]</a><br>
+              2. Wu, K., Chen, J., Liang, Z., Wang, Y., Li, J., Zhang, C., ... & Yuan, Y. (2025). Hybrid Layout Control for Diffusion Transformer: Fewer Annotations, Superior Aesthetics. In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 17930-17940). <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Wu_Hybrid_Layout_Control_for_Diffusion_Transformer_Fewer_Annotations_Superior_Aesthetics_ICCV_2025_paper.html" target="_blank" rel="noreferrer">[PDF]</a> <a href="https://github.com/KemingWu/HybridLayout" target="_blank" rel="noreferrer">[Code]</a><br>
+              3. Luo, Y., Yuan, Y., Chen, J., Cai, H., Yue, Z., Yang, Y., ... & Lian, Z. (2025). MMMG: A Massive, Multidisciplinary, Multi-Tier Generation Benchmark for Text-to-Image Reasoning. arXiv preprint arXiv:2506.10963. (NeurIPS 2025 Poster) <a href="https://arxiv.org/abs/2506.10963" target="_blank" rel="noreferrer">[PDF]</a> <a href="https://mmmgbench.github.io/" target="_blank" rel="noreferrer">[Project Page]</a>
+            </ul>
+            <footer class="card-footer">
+              <a class="chip" href="#" target="_blank" rel="noreferrer">Project Link</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">Report/Slides</a>
+            </footer>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <h3>Institute of Automation Chinese Academy of Sciences · Full-time Research Intern</h3>
+              <span class="time">2019.09 — 2020.06 · Beijing</span>
+            </header>
+            <ul class="bullets">
+              <li>Research on improving the interactive instance segmentation method and developed applications for Huawei Atlas 200 DK AI Kit.</li>
+              <p>Major Achievement:</p>
+              1. Chen, J., Lu, Y., Chen, Y., Zhao, D., & Pang, Z. (2020, November). Contourrend: a segmentation method for improving contours by rendering. In International Symposium on Neural Networks (pp. 251-260). Cham: Springer International Publishing. <a href="https://dl.acm.org/doi/10.1007/978-3-030-64221-1_22" target="_blank" rel="noreferrer">[PDF]</a> <a href="https://github.com/CUQS/ContourRend" target="_blank" rel="noreferrer">[Code]</a><br>
+              2. Road Segmentation Application based on Huawei Atlas 200 DK AI Kit. <a href="https://github.com/CUQS/road-segmentation" target="_blank" rel="noreferrer">[Code]</a><br>
+              3. Object Detection Application based on Huawei Atlas 200 DK AI Kit. <a href="https://github.com/CUQS/objDetection" target="_blank" rel="noreferrer">[Code]</a><br>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="section alt">
+      <div class="container">
+        <h2>Awards</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-header">
+                <h3>Best paper awards in the 18th International Conference on Machine Vision Applications (MVA2023)</h3>
+                <span class="time">2023/06/25</span>
+              </div>
+              <p>This award has been given since 2011 to the authors of an paper that was most excellent from the viewpoint of machine vision applications.</p> <a href="https://www.mva-org.jp/archives.BestPaperAward.php" target="_blank" rel="noreferrer">[Official Site]</a>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-header">
+                <h3>情報処理学会第86回全国大会学生奨励賞</h3>
+                <span class="time">2024/03/15</span>
+              </div>
+              <p>Presentation Title: 画像認識技術を活用した冷蔵庫内食材自動判別システムの開発</p>
+              <p>As the Teaching Assistant, I supported the student on this project.</p> <a href="https://www.uec.ac.jp/news/prize/2024/20240419_6198.html" target="_blank" rel="noreferrer">[Award Info]</a> <a href="https://www.ipsj.or.jp/event/taikai/86/WEB/data/pdf/4T-01.html" target="_blank" rel="noreferrer">[Official Site]</a> <a href="https://ipsj.ixsq.nii.ac.jp/records/236132" target="_blank" rel="noreferrer">[Paper]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section alt">
+      <div class="container">
+        <h2>Research</h2>
+        <div class="cards">
+          <article id="card-hoi-r1" class="card">
+            <header class="card-header">
+              <h3>HOI-R1: Exploring the Potential of Multimodal Large Language Models for Human-Object Interaction Detection</h3>
+              <span class="time">2025/08</span>
+            </header>
+            <p class="muted">arXiv preprint arXiv:2510.05609</p>
+            <p class="muted">Authors: Junwen Chen, Peilin Xiong, Keiji Yanai </p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/HOI-R1.png" alt="HOI-R1 paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We propose HOI-R1, the first reinforcement learning–based MLLM framework for Human-Object Interaction Detection (HOID) without relying on external detection modules.</li>
+                  <li>HOI-R1 introduces a text-based reasoning process and HOID-specific reward functions to enable pure language-driven interaction detection.</li>
+                  <li>Experiments on HICO-DET demonstrate that HOI-R1 achieves twice the baseline accuracy and exhibits strong generalization capability.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://arxiv.org/abs/2510.05609" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>Japanese Kuzushiji Font Generation Employing Differentiable Renderer</h3>
+              <span class="time">2025/09</span>
+            </header>
+            <p class="muted">International Conference on Document Analysis and Recognition (ICDAR 2025)</p>
+            <p class="muted">Authors: Honghui Yuan, Junwen Chen, and Keiji Yanai</p>
+            <ul class="bullets">
+              <li>We focus on generating ancient handwritten fonts, particularly Kuzushiji, to support the preservation of Japanese historical documents.</li>
+              <li>We propose a few-shot, training-free method using vector images to convert modern fonts into Kuzushiji style.</li>
+              <li>Our experiments show that the proposed method effectively produces high-quality Kuzushiji fonts, outperforming previous approaches.</li>
+            </ul>
+            <footer class="card-footer">
+              <a class="chip" href="https://link.springer.com/chapter/10.1007/978-3-032-04630-7_4" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>PosBridge: Multi-View Positional Embedding Transplant for Identity-Aware Image Editing</h3>
+              <span class="time">2025/08</span>
+            </header>
+            <p class="muted">The 36th British Machine Vision Conference (BMVC 2025)</p>
+            <p class="muted">Authors: Peilin Xiong, Junwen Chen, and Keiji Yanai </p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/PosBridge.png" alt="PosBridge paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We address localized subject-driven image editing by proposing PosBridge, a training-free and scalable framework for inserting custom objects into target scenes.</li>
+                  <li>Our method leverages positional embedding transplant and a Corner Centered Layout strategy to guide diffusion models in maintaining structural and appearance consistency.</li>
+                  <li>Experimental results show that PosBridge outperforms existing methods in structure preservation, visual fidelity, and computational efficiency.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://arxiv.org/abs/2508.17302" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>MMMG: A Massive, Multidisciplinary, Multi-Tier Generation Benchmark for Text-to-Image Reasoning</h3>
+              <span class="time">2025/06</span>
+            </header>
+            <p class="muted">The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)</p>
+            <p class="muted">Authors: Yuxuan Luo, Yuhui Yuan, Junwen Chen, Haonan Cai, Ziyi Yue, Yuwei Yang, Fatima Zohra Daha, Ji Li, Zhouhui Lian</p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/MMMG.png" alt="MMMG paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We introduce knowledge image generation as a new task and present MMMG, a large benchmark of 4,456 expert-validated knowledge image–prompt pairs across multiple disciplines and levels.</li>
+                  <li>MMMG enables systematic evaluation using a unified Knowledge Graph (KG) representation and a new MMMG-Score that measures factual fidelity and visual clarity.</li>
+                  <li>Experiments on 16 leading text-to-image models reveal major reasoning limitations, while our proposed FLUX-Reason baseline demonstrates promising performance for future research.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://arxiv.org/abs/2506.10963" target="_blank" rel="noreferrer">Paper</a> <a class="chip" href="https://mmmgbench.github.io/" target="_blank" rel="noreferrer">Project Page</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>PrismLayers: Open Data for High-Quality Multi-Layer Transparent Image Generative Models</h3>
+              <span class="time">2025/05</span>
+            </header>
+            <p class="muted">arXiv preprint arXiv:2505.22523</p>
+            <p class="muted">Authors: Junwen Chen, Heyang Jiang, Yanbin Wang, Keming Wu, Ji Li, Chao Zhang, Keiji Yanai, Dong Chen, Yuhui Yuan</p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/PrismLayers.png" alt="PrismLayers paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We introduce PrismLayers and PrismLayersPro, the first large-scale, high-fidelity datasets of multi-layer transparent images with accurate alpha mattes for text-to-image generation.</li>
+                  <li>We propose a training-free synthesis pipeline and a strong multi-layer generation model, ART+, built upon LayerFLUX and MultiLayerFLUX for high-quality layered image composition.</li>
+                  <li>Experiments and user studies show that ART+ surpasses the original ART and matches the visual quality of FLUX.1-[dev], establishing a foundation for future research in editable multi-layer image generation.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://arxiv.org/abs/2505.22523" target="_blank" rel="noreferrer">Paper</a> <a class="chip" href="https://huggingface.co/datasets/artplus/PrismLayersPro" target="_blank" rel="noreferrer">Dataset</a>
+            </footer>
+          </article>
+          <article id="card-sov-stg-vla" class="card">
+            <header class="card-header">
+              <h3>Focusing on what to decode and what to train: SOV Decoding with Specific Target Guided DeNoising and Vision Language Advisor</h3>
+              <span class="time">2024/12</span>
+            </header>
+            <p class="muted">2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025)</p>
+            <p class="muted">Authors: Junwen Chen, Yingcheng Wang, Keiji Yanai</p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/SOV-STG-VLA.png" alt="SOV-STG-VLA paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We propose SOV-STG-VLA, a transformer-based framework for Human-Object Interaction Detection (HOID) that disentangles object detection and verb recognition.</li>
+                  <li>Our method introduces Subject-Object-Verb (SOV) decoding, Specific Target Guided (STG) denoising, and a Vision-Language Advisor (VLA) to enhance representation learning and training efficiency.</li>
+                  <li>Experiments show that SOV-STG-VLA achieves state-of-the-art performance with six times faster convergence than recent transformer-based methods.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://ieeexplore.ieee.org/abstract/document/10943332" target="_blank" rel="noreferrer">Paper</a> <a class="chip" href="https://github.com/cjw2021/SOV-STG-VLA" target="_blank" rel="noreferrer">Code</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>RecipeSD: Injecting Recipe into Food Image Synthesis with Stable Diffusion</h3>
+              <span class="time">2024/10</span>
+            </header>
+            <p class="muted">Proceedings of the 2nd International Workshop on Multimedia Content Generation and Evaluation: New Methods and Practice (McGE '24)</p>
+            <p class="muted">Authors: Jing Yang, Junwen Chen, Keiji Yanai </p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/RecipeSD.png" alt="RecipeSD paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We propose RecipeSD, a Stable Diffusion–based method that incorporates recipe text information to enhance food image synthesis.</li>
+                  <li>Using a pretrained recipe encoder and the Image-like Recipe Transformation (IRT) with our CookNet model, we effectively inject detailed recipe semantics into the diffusion process.</li>
+                  <li>Experiments show that RecipeSD generates high-quality, recipe-aligned food images, outperforming existing cross-modal synthesis methods.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://dl.acm.org/doi/abs/10.1145/3688867.3690173" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>Improving Cross-Modal Recipe Embeddings with Cross Decoder</h3>
+              <span class="time">2024/06</span>
+            </header>
+            <p class="muted">Proceedings of the 5th ACM Workshop on Intelligent Cross-Data Analysis and Retrieval</p>
+            <p class="muted">Authors: Jing Yang, Junwen Chen, Keiji Yanai</p>
+            <ul class="bullets">
+              <li>We propose a Cross-Modal Embedding Fusing Decoder (Cross Decoder) to enhance cross-modal recipe retrieval.</li>
+              <li>By integrating the Cross Decoder into a GAN–transformer framework and using dynamic margin loss, we improve embedding reliability and retrieval performance.</li>
+              <li>Experiments on the Recipe1M dataset show that our method outperforms state-of-the-art approaches in both retrieval accuracy and image generation quality.</li>
+            </ul>
+            <footer class="card-footer">
+              <a class="chip" href="https://dl.acm.org/doi/abs/10.1145/3643488.3660303" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>Contextual Associated Triplet Queries for Panoptic Scene Graph Generation</h3>
+              <span class="time">2023/12</span>
+            </header>
+            <p class="muted">Proceedings of the 5th ACM International Conference on Multimedia in Asia (MMAsia '23)</p>
+            <p class="muted">Authors: Jingbin Xu, Junwen Chen, Keiji Yanai</p>
+            <img src="paper_thumbnail/CATQ.png" alt="CATQ paper thumbnail" style="width:70%; height:auto; display:block; margin:12px 0;" />
+            <ul class="bullets">
+              <li>We address the limitations of existing Panoptic Scene Graph (PSG) methods by proposing a new one-stage framework called Contextual Associated Triplet Queries (CATQ).</li>
+              <li>CATQ decodes subject, object, and relation features through separate branches, guided by instance information and enhanced with a Triplet Context Fusion Block.</li>
+              <li>Experiments demonstrate that CATQ significantly outperforms state-of-the-art methods, achieving 34.8 Recall@20 and 20.9 mRecall@20 with only half the training time.</li>
+            </ul>
+            <footer class="card-footer">
+              <a class="chip" href="https://dl.acm.org/doi/abs/10.1145/3595916.3626745" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article id="card-howtoeat" class="card">
+            <header class="card-header">
+              <h3>HowToEat: Exploring Human Object Interaction and Eating Action in Eating Scenarios</h3>
+              <span class="time">2023/10</span>
+            </header>
+            <p class="muted">Proceedings of the 8th International Workshop on Multimedia Assisted Dietary Management (MADiMa '23)</p>
+            <p class="muted">Authors: Yingcheng Wang, Junwen Chen, Keiji Yanai</p>
+            <img src="paper_thumbnail/HowToEat.png" alt="HowToEat paper thumbnail" style="width:70%; height:auto; display:block; margin:12px 0;" />
+            <ul class="bullets">
+              <li>We focus on eating and diet multimedia analysis, emphasizing the need to detect eating activities in videos and images.</li>
+              <li>To address the lack of eating-specific data, we introduce HowToEat, a large-scale dataset with 66 days of videos and 95k annotated images across 12 eating scenarios.</li>
+              <li>Based on this dataset, we develop an eating analysis system that simultaneously detects hand-object interactions and eating actions using a single model.</li>
+            </ul>
+            <footer class="card-footer">
+              <a class="chip" href="https://dl.acm.org/doi/abs/10.1145/3607828.3617790" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article id="card-qahoi" class="card">
+            <header class="card-header">
+              <h3>QAHOI: Query-based anchors for human-object interaction detection</h3>
+              <span class="time">2023/07</span>
+            </header>
+            <p class="muted">2023 18th International Conference on Machine Vision and Applications (MVA)</p>
+            <p class="muted">Authors: Junwen Chen and Keiji Yanai</p>
+            <img src="paper_thumbnail/QAHOI.png" alt="QAHOI paper thumbnail" style="width:60%; height:auto; display:block; margin:12px 0;" />
+            <ul class="bullets">
+              <li>We address the Human-Object Interaction (HOI) detection task by proposing QAHOI, a transformer-based method using query-based anchors for end-to-end HOI prediction.</li>
+              <li>QAHOI employs a multi-scale architecture to capture spatial variations in object size and location, improving interaction recognition accuracy.</li>
+              <li>Experiments on the HICO-DET benchmark show that QAHOI with a transformer backbone significantly outperforms state-of-the-art methods.</li>
+            </ul>
+            <footer class="card-footer">
+              <a class="chip" href="https://dl.acm.org/doi/abs/10.1145/3607828.3617790" target="_blank" rel="noreferrer">Paper</a> <a class="chip" href="https://github.com/cjw2021/QAHOI" target="_blank" rel="noreferrer">Code</a>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>Transformer-Based Cross-Modal Recipe Embeddings with Large Batch Training</h3>
+              <span class="time">2023/01</span>
+            </header>
+            <p class="muted">International Conference on Multimedia Modeling</p>
+            <p class="muted">Authors: Jing Yang, Junwen Chen, Keiji Yanai</p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/TNLBT.png" alt="TNLBT paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We propose TNLBT (Transformer-based Network for Large Batch Training), a simple yet effective framework for cross-modal recipe retrieval and image generation.</li>
+                  <li>TNLBT employs Transformer-based encoders for both image and text embedding, combines self-supervised and contrastive losses, and leverages large-batch training to enhance cross-modal learning.</li>
+                  <li>Experiments on Recipe1M demonstrate that TNLBT significantly outperforms state-of-the-art methods, and we confirm that large-batch training improves recipe embedding learning.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://link.springer.com/chapter/10.1007/978-3-031-27818-1_39" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article id="card-pqnet" class="card">
+            <header class="card-header">
+              <h3>Parallel Queries for Human-Object Interaction Detection</h3>
+              <span class="time">2022/12</span>
+            </header>
+            <p class="muted">Proceedings of the 4th ACM International Conference on Multimedia in Asia (MMAsia '22)</p>
+            <p class="muted">Authors: Junwen Chen, Keiji Yanai</p>
+            <div class="card-two-col">
+              <div class="card-left">
+                <img src="paper_thumbnail/PQNet.png" alt="PQNet paper thumbnail" />
+              </div>
+              <div class="card-right">
+                <ul class="bullets">
+                  <li>We propose Parallel Query Network (PQNet) for Human-Object Interaction (HOI) detection, which separates human and object localization into parallel decoding branches.</li>
+                  <li>PQNet employs two transformer decoders for subject and object embeddings and introduces a verb decoder that fuses their representations through attention mechanisms.</li>
+                  <li>Experiments show that PQNet outperforms previous methods while requiring only half the training epochs.</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a class="chip" href="https://dl.acm.org/doi/abs/10.1145/3551626.3564944" target="_blank" rel="noreferrer">Paper</a>
+            </footer>
+          </article>
+          <article id="card-contourrend" class="card">
+            <header class="card-header">
+              <h3>ContourRend: A Segmentation Method for Improving Contours by Rendering</h3>
+              <span class="time">2022/12</span>
+            </header>
+            <p class="muted">International Symposium on Neural Networks</p>
+            <p class="muted">Authors: 
+Junwen Chen, Yi Lu, Yaran Chen, Dongbin Zhao, Zhonghua Pang</p>
+            <img src="paper_thumbnail/ContourRend.png" alt="ContourRend paper thumbnail" style="width:60%; height:auto; display:block; margin:12px 0;" />
+            <ul class="bullets">
+              <li>We propose ContourRend, a segmentation method designed to refine object contours and achieve clearer, more complete segmentation results.</li>
+              <li>ContourRend integrates a contour renderer with a GCN-based segmentation model, focusing on high-resolution prediction around contour pixels.</li>
+              <li>Experiments on the Cityscapes dataset show that ContourRend achieves 72.41% mIoU, outperforming the baseline Polygon-GCN by 1.22%.</li>
+            </ul>
+            <footer class="card-footer">
+              <a class="chip" href="https://link.springer.com/chapter/10.1007/978-3-030-64221-1_22" target="_blank" rel="noreferrer">Paper</a> <a class="chip" href="https://github.com/CUQS/ContourRend" target="_blank" rel="noreferrer">Code</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid-3">
+          <div>
+            <h3>Programming</h3>
+            <ul class="tags">
+              <li>Python</li><li>C++</li><li>JavaScript</li><li>HTML/CSS</li><li>Kotlin</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Frameworks/Tools</h3>
+            <ul class="tags">
+              <li>PyTorch</li><li>TensorFlow</li><li>Docker</li><li>Linux</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>Chinese (Native)</li><li>English (TOEFL 82, TOEIC 845)</li><li>Japanese (N1)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Personal Projects</h2>
+        <div class="grid-3">
+          <div>
+            <h3>Japanese Words Learning App</h3>
+            <p>A mobile application written in Kotlin designed to help users learn Japanese words through interactive quizzes and flashcards.</p><br><a class="chip" href="https://github.com/CUQS/SuperWordsR" target="_blank" rel="noreferrer">Code</a>
+          </div>
+          <div>
+            <h3>Japan Ski Resort Info</h3>
+            <p>A website providing information about ski resorts in Japan, including location, facilities, and user reviews.</p><br><a class="chip" href="https://cuqs.github.io/ski_meta.github.io/" target="_blank" rel="noreferrer">Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section alt">
+      <div class="container">
+        <h2>Hobbies</h2>
+        <p>Tennis, Photography, Traveling</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Junwen Chen.</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+    <!-- Floating back-to-top button -->
+    <a id="floating-top" class="floating-top" href="#top" aria-label="Back to top">↑</a>
+</body>
+</html>
