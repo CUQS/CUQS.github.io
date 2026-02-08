@@ -100,6 +100,16 @@ h3 { font-size: 20px; }
 .card-two-col .card-right { display: block; }
 .card-two-col img { width: 100%; height: auto; border-radius: 8px; }
 
+/* Collapse/expand behavior for Research section */
+#research .cards { max-height: 9999px; transition: max-height 300ms ease, opacity 200ms ease; opacity: 1; overflow: hidden; }
+#research.collapsed .cards { max-height: 0; opacity: 0; pointer-events: none; }
+#research:not(.collapsed) .cards { max-height: 9999px; }
+#research h2 { cursor: pointer; }
+#research h2[aria-expanded="true"]::after { content: " ▲"; font-size: 14px; color: var(--muted); margin-left: 8px; }
+#research h2[aria-expanded="false"]::after { content: " ▼"; font-size: 14px; color: var(--muted); margin-left: 8px; }
+#research h2:focus { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+#research h2 .note { font-size: 14px; color: var(--muted); font-weight: 400; margin-left: 8px; vertical-align: middle; }
+
 /* Timeline */
 .timeline { position: relative; margin: 10px 0; }
 .timeline:before { content:""; position:absolute; left: 12px; top:0; bottom:0; width:2px; background: var(--border); }

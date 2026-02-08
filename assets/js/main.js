@@ -58,3 +58,46 @@ function updateFloatingTop() {
 }
 updateFloatingTop();
 window.addEventListener('scroll', updateFloatingTop);
+
+// Research section: default collapsed; header toggles collapse/expand; clicking a card will expand it
+const researchSection = document.getElementById('research');
+if (researchSection) {
+  const researchHeader = researchSection.querySelector('h2');
+  const cards = researchSection.querySelector('.cards');
+
+  if (cards && !cards.id) {
+    cards.id = 'research-cards';
+  }
+
+  // Sync initial aria state with class
+  if (researchHeader) {
+    researchHeader.setAttribute('aria-controls', cards ? cards.id : 'research-cards');
+    if (researchSection.classList.contains('collapsed')) {
+      researchHeader.setAttribute('aria-expanded', 'false');
+    } else {
+      researchHeader.setAttribute('aria-expanded', 'true');
+    }
+
+    const toggleResearch = () => {
+      const collapsed = researchSection.classList.toggle('collapsed');
+      researchHeader.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    };
+
+    researchHeader.addEventListener('click', toggleResearch);
+    researchHeader.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleResearch(); }
+    });
+
+    // Clicking any card expands the section (but doesn't collapse)
+    if (cards) {
+      cards.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+          if (researchSection.classList.contains('collapsed')) {
+            researchSection.classList.remove('collapsed');
+            researchHeader.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    }
+  }
+}
