@@ -46,6 +46,33 @@ for (const a of document.querySelectorAll('a[target="_blank"]')) {
   a.rel = 'noreferrer noopener';
 }
 
+// Auto-expand research section when clicking a chip link pointing to a research card
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a.chip[href^="#card-"]');
+  if (!link) return;
+  const targetId = link.getAttribute('href').slice(1);
+  const target = document.getElementById(targetId);
+  const research = document.getElementById('research');
+  if (target && research && research.contains(target) && research.classList.contains('collapsed')) {
+    e.preventDefault();
+    research.classList.remove('collapsed');
+    const header = research.querySelector('h2');
+    if (header) header.setAttribute('aria-expanded', 'true');
+    // Wait for the expand transition to finish so layout is stable
+    const cards = research.querySelector('.cards');
+    const scrollToTarget = () => {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    if (cards) {
+      cards.addEventListener('transitionend', scrollToTarget, { once: true });
+      // Fallback in case no transition fires (e.g. prefers-reduced-motion)
+      setTimeout(scrollToTarget, 400);
+    } else {
+      setTimeout(scrollToTarget, 400);
+    }
+  }
+});
+
 // Floating back-to-top button visibility
 const floatingTop = document.getElementById('floating-top');
 function updateFloatingTop() {
