@@ -215,7 +215,7 @@ const i18nJA = {
   'skills-fw-title': 'フレームワーク/ツール',
   'skills-lang-title': '言語能力',
   'skills-lang-zh': '中国語（母語）',
-  'skills-lang-en': '英語（TOEFL 82、TOEIC 845）',
+  'skills-lang-en': '英語（TOEFL 84、TOEIC 845）',
   'skills-lang-ja': '日本語（N1）',
 
   // Projects
