@@ -171,8 +171,6 @@ const i18nJA = {
   'about-interests-2': 'コンピュータビジョン：物体検出、画像セグメンテーション、視覚的質問応答、動画行動認識',
   'about-interests-3': 'MLLM：マルチモーダル大規模言語モデル',
   'about-interests-4': 'AIGC：テキストから画像生成、マルチレイヤー画像生成、画像編集',
-  'about-looking-title': '希望する職種',
-  'about-looking-desc': '2026年冬季 研究インターン / フルタイム 研究開発エンジニア / フルタイム 研究員',
 
   // Education
   'edu-title': '学歴',
